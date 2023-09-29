@@ -1,0 +1,27 @@
+var a=0;
+while(a<14){
+    toast(a);
+    click(1300,970);
+    toast("再来一局");
+    sleep(20000);
+    click(1160,840);
+    toast("确认");
+    sleep(20000);
+    for(x=0;x<7;x++){
+        swipe(380,800,530,680,10000);
+        click(2000,900);
+        sleep(25000);
+    };
+    click(2240,70);//投降
+    toast("投降");
+    sleep(500);
+    click(1400,940);//投降
+    sleep(20000);
+    click(1180,990);
+    toast("任意位置");
+    sleep(10000);
+    click(1180,990);
+    toast("任意位置");
+    sleep(500);
+    a++;
+};

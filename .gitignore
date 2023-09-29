@@ -1,0 +1,6 @@
+.vscode
+model
+__pycache__
+
+
+*.caffemodel

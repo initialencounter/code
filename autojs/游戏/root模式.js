@@ -1,0 +1,26 @@
+setScreenMetrics(2340,1080);
+while(1){
+    var ra = new RootAutomator();
+    ra.tap(1160,840,1);
+    toast("确认");
+    sleep(20000);
+    for(x=0;x<7;x++){
+        ra.swipe(380,800,530,680,10000,1);
+        toast(x);
+        ra.swipe(530,680,380,800,10000,2);
+    };
+    ra.tap(2240,70,2);//投降
+    toast("投降");
+    sleep(500);
+    ra.tap(1400,940,3);//投降
+    sleep(20000);
+    ra.tap(1180,990,4);
+    toast("任意位置");
+    sleep(10000);
+    ra.tap(1180,990,5);
+    toast("任意位置");
+    sleep(500);
+    ra.tap(1300,970,5);
+    toast("继续");
+    sleep(20000);
+};
